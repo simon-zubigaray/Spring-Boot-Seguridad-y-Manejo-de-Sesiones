@@ -75,3 +75,10 @@ Este proyecto es una API REST construida con **Spring Boot** que implementa **au
    - `http://localhost:8080/v1/index2` (público)
    - `http://localhost:8080/login` (login)
    - `http://localhost:8080/v1/index` (protegido)
+
+---
+
+## 📩 Contacto
+
+Para consultas o colaboración, podés escribirme a:  
+**zubigarayjuansimon@gmail.com**
