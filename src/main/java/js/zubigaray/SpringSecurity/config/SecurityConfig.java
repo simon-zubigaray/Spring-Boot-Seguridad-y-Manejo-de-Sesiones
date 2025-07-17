@@ -33,6 +33,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+                // CSRF se desactiva en APIs REST o cuando se usa autenticación con tokens (JWT, OAuth2).
+                // Solo debe activarse en aplicaciones web con formularios HTML y cookies de sesión.
+                .csrf(csrf -> csrf.disable())
                 // Configura las reglas de autorización
                 .authorizeHttpRequests(auth -> auth
                         // Permite acceso público a la URL "/v1/index2"
